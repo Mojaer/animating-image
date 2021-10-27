@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;  
+}
+
+.main{
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;   
+}
+
+img{
+    width: 120%;
+    height: 110vh;
+    margin: auto;  
+    position: absolute;
+    animation: animate 3s  linear infinite;
+}
+
+@keyframes animate {
+    100%{width:100% ;height: 100vh;}
+    
+}
+
+.text-box {
+    color: white;
+    position: absolute;
+    top: 30%;
+    margin: 3% 3% 3% 3%;
+    transform: translateY(-100px);
+    animation: tex 3s linear infinite ;
+}
+
+@keyframes tex{
+    100%{transform: translate(0%);}
+}
+
+.text-box h1{
+    color: turquoise;
+}
+.text-box span{
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.text-box p{
+    margin-top: 20px;
+    position: absolute;
+    line-height: 30px;
+}
+
+.one{
+    animation: slide1 12s linear infinite;
+}
+
+@keyframes slide1 {
+    0%{visibility: visible;}
+    25%{visibility: visible;}
+    50%{visibility: hidden;}
+    75%{visibility: hidden;}
+    100%{visibility: visible;}
+    
+}
+
+.two{
+    animation: slide2 12s linear infinite;
+}
+
+@keyframes slide2 {
+    0%{visibility: hidden;}
+    25%{visibility: hidden;}
+    50%{visibility: visible;}
+    75%{visibility: hidden;}
+    100%{visibility: hidden;}
+    
+}
+.three{
+    animation: slide3 12s linear infinite;
+}
+@keyframes slide3 {
+    0%{visibility: hidden;}
+    25%{visibility: hidden;}
+    50%{visibility: hidden;}
+    75%{visibility: visible;}
+    100%{visibility: hidden;}
+    
+}
+.four{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide4 {
+    0%{visibility: hidden;}
+    25%{visibility: hidden;}
+    50%{visibility: hidden;}
+    75%{visibility: hidden;}
+    100%{visibility: visible;}
+    
+}
+
